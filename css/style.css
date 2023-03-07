@@ -24,11 +24,17 @@ main {
 
 form {
   display: grid;
-  row-gap: 1rem;
+  row-gap: 1.25rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   padding: 1rem;
+}
+
+form h3 {
+  margin: 0;
+  grid-area: 1 / 1 / 2 / 3;
+  justify-self: center;
 }
    
 button {
