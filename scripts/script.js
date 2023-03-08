@@ -26,8 +26,7 @@ function handleRegistration() {
 function checkMail(mail) {
   const regexMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  let mailPattern = regexMail;
-  let validEmail = mailPattern.test(mail);
+  let validEmail = regexMail.test(mail);
 
   if (validEmail) {
     return true;
